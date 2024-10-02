@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    color: #000;
+  }
+  
+  
+  header {
+    background-color: #009810;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #003;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #007BFF;
+  }
+  
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #003;
+    margin-bottom: 4px;
+    border-radius: 5px;
+  }
+  
+  
+  #hero {
+    height: 100vh;
+    background: url('https://img.freepik.com/free-vector/workout-tracker-app-set_23-2148667056.jpg?size=626&ext=jpg&ga=GA1.2.398478001.1727749474&semt=ais_hybrid') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: ralative;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 10rem
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  #about {
+    padding: 4rem 2rem;
+    background-color: #0099;
+    text-align: center;
+  }
+  
+  #about h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  #about p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  
+  #projects {
+    padding: 8rem 8rem;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project {
+    background-color: #000;
+    padding: 5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 20px;
+  }
+  
+  .project img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  
+  .project h3 {
+    margin: 4rem 10 0.5rem;
+  }
+  
+  .project p {
+    font-size: 0.9rem;
+    color: #fff;
+    position: center;
+    
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-top: 5rem;
+    color: #fFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  #contact {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  #contact-form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  footer {
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #007BFF;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      position: fixed;
+      right: 0;
+      height: 100vh;
+      top: 0;
+      background-color: #fff;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      padding-top: 5rem;
+    }
+  
+    .nav-links li {
+      margin: 1.5rem 0;
+    }
+  
+    .nav-links.active {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+ 
